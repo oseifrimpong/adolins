@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
@@ -13,5 +12,4 @@
 
 <%= render 'comments/comment' %>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+
