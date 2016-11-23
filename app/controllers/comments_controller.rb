@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
 	end
 
 	def edit
-		
+		authorize! :update, @comment
 	end
 
 	def update

@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
 <p>
   <strong>Title:</strong>
   <%= @post.title %>
@@ -9,6 +9,7 @@
   <strong>Body:</strong>
   <%= @post.body %>
 </p>
+<p><%= time_ago_in_words(@post.created_at)%> ago by <%= current_user.email %></p>
 
 <%= render 'comments/comment' %>
 
