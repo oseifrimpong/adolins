@@ -6,4 +6,8 @@ class User < ApplicationRecord
 
          has_many :posts
          has_many :comments, dependent: :destroy
+
+         # def admin?
+         # 	has_attribute?(:admin)
+         # end
 end

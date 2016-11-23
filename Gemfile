@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'cancan'
+gem 'rails_admin'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
