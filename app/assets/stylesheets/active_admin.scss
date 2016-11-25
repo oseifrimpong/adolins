@@ -1,0 +1,15 @@
+
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+
+
+$skinLogo: none;
+@import "active_skin";
+$skinActiveColor: #001cee;
+$skinHeaderBck: #002744;
+$panelHeaderBck: #002744;
+
+//   .status_tag { background: #6090DB; }

@@ -16,7 +16,10 @@ gem 'bootstrap-sass'
 
 gem 'devise'
 gem 'cancan'
-gem 'rails_admin'
+gem 'activeadmin', github: 'activeadmin'
+gem 'active_skin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
