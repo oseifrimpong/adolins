@@ -1,5 +1,5 @@
-<p id="notice"><%= notice %></p>
-<p>
+ <p id="notice"><%= notice %></p>
+<!-- <p>
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
@@ -8,8 +8,37 @@
   <strong>Body:</strong>
   <%= @post.body %>
 </p>
-<p><%= time_ago_in_words(@post.created_at)%> ago by <%= current_user.email %></p>
 
-<%= render 'comments/comment' %>
+<%= render 'comments/comment' %> 
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <!-- Blog Post -->
+                <!-- Title -->
+                <h1 class="title"><%= @post.title %></h1>
+
+                <!-- Date/Time -->
+                <p class="date">Published Date: <%= @post.created_at %></p>
+
+                <!-- Preview Image -->
+                <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
+                <div class="img-responsive">
+                  <%= image_tag @post.image %>
+                </div>
+
+                <!-- Post Content -->
+                <p class="lead">
+                	 <%= @post.body %>
+                	 </p>
+
+                <%= render 'comments/comment' %>
+                             </div>
+      </div>
+
+        <!-- /.row -->
+
 
 

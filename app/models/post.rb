@@ -3,7 +3,7 @@ class Post < ApplicationRecord
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
 
-	validates :title, presence: true, length: { minimum: 20 }
+	validates :title, presence: true  
 	validates :body, presence: true
 	#belongs_to :user
 	has_many :comments, dependent: :destroy

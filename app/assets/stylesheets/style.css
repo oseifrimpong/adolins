@@ -17,7 +17,7 @@ a,.row.articles div,.members-social {
   -webkit-transition:all 0.2s ease-in-out;
   -o-transition:all 0.2s ease-in-out;
   color:#000;
-  text-decoration:none;
+  text-decoration:none !important;
 }
 .nopadding {
   padding-left:0 !important;
@@ -860,6 +860,7 @@ i:hover {
 }
 .container-full {
   background:#000;
+  
 }
 .above-footer {
   width:100%;
