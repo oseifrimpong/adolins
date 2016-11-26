@@ -3,7 +3,7 @@
 	
     <% @ccc = comment.content.html_safe %> 
     <div class="comment-view">
-        <h4>Some Name</h4>
+        <h4><%= current_user.email %></h4>
         <p class="comment"><%= @ccc%> </p>     
     
 	
