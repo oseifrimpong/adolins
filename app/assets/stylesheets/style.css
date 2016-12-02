@@ -4,6 +4,12 @@ body{
   font-family: Arial sans-serif;
 }
 
+.logout{
+ margin-right: 50px;
+ padding-top: 20px; 
+ 
+}
+
 ul {
   padding:0;
   margin:0;

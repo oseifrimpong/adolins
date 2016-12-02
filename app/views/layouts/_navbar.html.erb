@@ -31,7 +31,14 @@
         <div class="row">
             <div class="col-md-10 produti">
                 <h4>Adolins Forum</h4>
+                
             </div>
+
+            <% if user_signed_in? %>
+            <div class = "logout pull-right">
+                    <button class="btn btn-primary"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></button>
+                </div>
+                <% end %>
         </div>
     </div>
 </div>
