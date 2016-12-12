@@ -31,7 +31,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
+gem 'figaro'
 gem 'rails_12factor', group: :production
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
