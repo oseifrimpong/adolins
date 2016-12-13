@@ -86,21 +86,22 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { :host => 'forum.adolins.com'}
   config.action_mailer.delivery_method = :smtp
+  
 
-require 'sendgrid-ruby'
-include SendGrid
+  # require 'sendgrid-ruby'
+  # include SendGrid
 
-from = Email.new(email: 'test@example.com')
-subject = 'Hello World from the SendGrid Ruby Library!'
-to = Email.new(email: 'test@example.com')
-content = Content.new(type: 'text/plain', value: 'Hello, Email!')
-mail = Mail.new(from, subject, to, content)
+  # from = Email.new(email: 'info@adolins.com')
+  # subject = 'Confirm Adolins Account'
+  # to = Email.new(email: 'test@example.com')
+  # content = Content.new(type: 'text/plain', value: 'Hello, Email!')
+  # mail = Mail.new(from, subject, to, content)
 
-sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-response = sg.client.mail._('send').post(request_body: mail.to_json)
-puts response.status_code
-puts response.body
-puts response.headers
+  # sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+  # response = sg.client.mail._('send').post(request_body: mail.to_json)
+  # puts response.status_code
+  # puts response.body
+  # puts response.headers
 
   config.action_mailer.perform_deliveries = true
 end
