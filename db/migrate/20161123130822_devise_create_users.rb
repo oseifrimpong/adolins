@@ -5,6 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       ##Admin?
    
       ## Database authenticatable
+      t.string :username,           null: false, default: ""
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
@@ -40,6 +41,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true
     add_index :users, :confirmation_token,   unique: true
+    add_index :users, :username, unique: true
     # add_index :users, :unlock_token,         unique: true
   end
 end

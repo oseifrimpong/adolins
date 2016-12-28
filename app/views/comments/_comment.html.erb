@@ -3,8 +3,8 @@
 	
     <% @ccc = comment.content.html_safe %> 
     <div class="comment-view">
-        <h4><%= current_user.email %></h4>
-        <p class="comment"><%= @ccc%> </p>     
+        <h4><%= current_user.username %></h4>
+        <p class="comment"><%= @ccc %> </p>     
     
 	
         <div class="editbtn">
@@ -20,12 +20,3 @@
 
 
 
-<!-- <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div> -->
