@@ -24,7 +24,7 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
-
+gem 'newrelic_rpm'
 group :development do
   gem 'web-console'
   gem 'listen', '~> 3.0.5'

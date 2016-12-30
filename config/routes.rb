@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
-  resources :payment
+  resources :payment, only: [:new, :create, :show]
   
   root to: 'posts#index'
   resources :posts do
