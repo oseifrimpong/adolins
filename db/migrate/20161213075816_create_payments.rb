@@ -5,7 +5,7 @@ class CreatePayments < ActiveRecord::Migration[5.0]
     	t.string :firstname, null: false
     	t.string :lastname, null: false
     	t.integer :phonenumber
-    	t.number :accountnumber
+    	t.integer :accountnumber
     	t.string :email
     	t.string :currency
     	t.decimal :amount
