@@ -1,24 +1,11 @@
 Rails.application.routes.draw do
-  get 'order/index'
 
-  get 'order/new'
 
-  get 'order/create'
-
-  get 'order/show'
-
-  # get 'payment/index'
-  # get 'payment/create'
-  # get 'payment/new'
-  # get 'payment/edit'
-  # get 'payment/show'
-  # get 'payment/update'
-  # get 'payment/delete'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
-  resources :payment, only: [:new, :create, :show]
+  #resources :payment, only: [:new, :create, :show]
   
   root to: 'posts#index'
   resources :posts do
