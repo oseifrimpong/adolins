@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'order/index'
+
+  get 'order/new'
+
+  get 'order/create'
+
+  get 'order/show'
+
   # get 'payment/index'
   # get 'payment/create'
   # get 'payment/new'
