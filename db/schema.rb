@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161231000414) do
+ActiveRecord::Schema.define(version: 20170106174434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,16 +57,23 @@ ActiveRecord::Schema.define(version: 20161231000414) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string   "description"
-    t.integer  "payments_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["payments_id"], name: "index_orders_on_payments_id", using: :btree
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "payments", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "phonenumber"
+    t.string   "email"
+    t.string   "currency"
+    t.decimal  "amount"
+    t.integer  "order_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["order_id"], name: "index_payments_on_order_id", using: :btree
+    t.index ["user_id"], name: "index_payments_on_user_id", using: :btree
   end
 
   create_table "posts", force: :cascade do |t|
@@ -107,5 +114,4 @@ ActiveRecord::Schema.define(version: 20161231000414) do
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
-  add_foreign_key "orders", "payments", column: "payments_id"
 end
