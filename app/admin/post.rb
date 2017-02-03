@@ -8,6 +8,7 @@ ActiveAdmin.register Post do
 				row :body
 				row :image do
 					post.image? ? image_tag(post.image.url, height: '100') : content_tag(:span, "No photo yet")
+					#image_tag(post.image.url(:image))
 				end
 			end
 		end
