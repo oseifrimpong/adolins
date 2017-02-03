@@ -12,7 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require lightbox
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'lightbox';

@@ -13,7 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
-
+gem 'lightbox2-rails'
 gem 'devise'
 gem 'cancan'
 gem 'activeadmin', github: 'activeadmin'

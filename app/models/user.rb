@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
          has_many :posts
          has_many :comments, dependent: :destroy
-         has_many :orders
-         has_many :payments
+        # has_many :orders
+        # has_many :payments
 end

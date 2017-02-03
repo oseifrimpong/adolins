@@ -9,7 +9,7 @@
   <%= @post.body %>
 </p>
 
-<%= render 'comments/comment' %> 
+<%= render 'comments/comment' %>  
 
         <div class="row">
 
@@ -26,7 +26,9 @@
                 <!-- Preview Image -->
                 <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
                 <div class="img-responsive">
-                  <%= image_tag @post.image %>
+               
+                  <%= link_to(image_tag @post.image, data: { lightbox: "example-set"}) %>
+               
                 </div>
 
                 <!-- Post Content -->

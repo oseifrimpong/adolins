@@ -7,6 +7,8 @@
  * - Attribution requires leaving author name, author link, and the license info intact
  */
 
+ //= require lightbox
+
 (function() {
   // Use local alias
   var $ = jQuery;
