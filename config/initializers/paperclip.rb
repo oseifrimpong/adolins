@@ -1,15 +1,13 @@
+# Allow ".foo" as an extension for files with the MIME type "text/plain".
+Paperclip.options[:content_type_mappings] = {
+  foo: %w(text/plain)
+}
 require 'paperclip/media_type_spoof_detector'
 
 module Paperclip
   class MediaTypeSpoofDetector
-    old_spoofed = instance_method(:spoofed?)
-
-    define_method(:spoofed?) do
-      if supplied_file_content_types.count > 0
-        old_spoofed.bind(self).()
-      else
-        false
-      end
+    def spoofed?
+      false
     end
   end
 end
