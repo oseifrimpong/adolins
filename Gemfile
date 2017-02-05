@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
+gem 'friendly_id', '~> 5.2'
 gem 'lightbox2-rails'
 gem 'devise'
 gem 'cancan'
