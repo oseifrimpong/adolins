@@ -1,6 +1,6 @@
 ActiveAdmin.register Post do
 	#adding a button for images
-	permit_params :title, :body, :image
+	permit_params :title, :body, :image, :slugged, :history
 
 		show do |t|
 			attributes_table do
