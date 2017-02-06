@@ -19,7 +19,8 @@ gem 'devise'
 gem 'cancan'
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+#gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'paperclip', '~> 5.1'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 group :development, :test do
