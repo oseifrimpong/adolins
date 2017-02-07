@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: obesoft-solutions
+  api_key: '224924433176572'
+  api_secret: 3H_a7ZBEf8ToCvAmdAlRGlFkNJQ
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: obesoft-solutions
+  api_key: '224924433176572'
+  api_secret: 3H_a7ZBEf8ToCvAmdAlRGlFkNJQ
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: obesoft-solutions
+  api_key: '224924433176572'
+  api_secret: 3H_a7ZBEf8ToCvAmdAlRGlFkNJQ
+  enhance_image_tag: true
+  static_image_support: false
