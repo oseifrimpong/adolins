@@ -6,7 +6,7 @@
 
   <div class="field">
     
-    <%= f.email_field :email, placeholder: 'Email', autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+    <%= f.email_field :email, required: true, placeholder: 'Email', autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
   </div>
 
   <div class="actions">
