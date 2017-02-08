@@ -1,5 +1,6 @@
  <p id="notice"><%= notice %></p>
 
+
             <!-- Blog Post Content Column -->
             <div class="col-lg-8 col-lg-offset-2">
 
@@ -14,7 +15,7 @@
                 <!-- <img class="img-responsive" src="http://placehold.it/900x300" alt=""> -->
                 <div class="img-responsive">
                
-                  <%= link_to(cl_image_tag @post.image, timestamp: false, :rel => "lightbox") %>
+                  <%= link_to(cl_image_tag @post.image, timestamp: false) %>
                
                 </div>
 
@@ -25,7 +26,13 @@
 
                 <%= render 'comments/comment' %>
                              </div>
+
+                             <div class="col-md-8 col-lg-offset-2 back">
+    <%= link_to "Back to Post ", posts_path%>
+    </div>
       </div>
+
+      
 
         <!-- /.row -->
 
