@@ -38,7 +38,9 @@ body {
 }
 
 .lead {
+    padding-top: 2px;
     padding-bottom: 5px;
+    text-align: justify;
 }
 
 .img-responsive {
