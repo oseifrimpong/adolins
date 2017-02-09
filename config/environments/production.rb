@@ -26,7 +26,7 @@ Rails.application.configure do
   config.assets.compile = true
   config.public_file_server.enabled = true
 
-  config.assets.precompile += %w[active_admin.css active_admin.js]
+  #config.assets.precompile += %w[active_admin.css active_admin.js]
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
