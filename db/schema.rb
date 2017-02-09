@@ -68,26 +68,6 @@ ActiveRecord::Schema.define(version: 20170205161225) do
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
   end
 
-  create_table "orders", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "payments", force: :cascade do |t|
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "phonenumber"
-    t.string   "email"
-    t.string   "currency"
-    t.decimal  "amount"
-    t.integer  "order_id"
-    t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["order_id"], name: "index_payments_on_order_id", using: :btree
-    t.index ["user_id"], name: "index_payments_on_user_id", using: :btree
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"

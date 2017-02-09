@@ -10,7 +10,7 @@ ActiveAdmin.setup do |config|
   # users to your main site. Defaults to no link.
   #
   # config.site_title_link = "/"
-
+  config.register_javascript 'tinymce.js'
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #
@@ -56,6 +56,8 @@ ActiveAdmin.setup do |config|
   # within the application controller.
   config.authentication_method = :authenticate_admin_user!
 
+  #for CKEDITOR
+  #config.register_javascript "ckeditor/ckeditor"
   # == User Authorization
   #
   # Active Admin will automatically call an authorization

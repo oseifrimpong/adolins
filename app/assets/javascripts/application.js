@@ -15,5 +15,6 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require lightbox
+//= require tinymce
 //= require_tree .
 
