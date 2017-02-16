@@ -1,0 +1,29 @@
+<%= flash[:alert] %>
+
+<div class="all-posts">
+ <% @posts.each do |post| %>
+ <div class='col-sm-6 col-lg-4'>
+  <div class="card">
+    <div class="card-topper" style='background-image: url(<%= post.image %>);'></div>
+    <div class="card-block">
+      <h4 class="card-title"><%= link_to truncate(post.title, length: 30), post, class: 'title-link', style: ':hover{background-color: none;}' %></h4>
+      <p class="published-date"><%= post.created_at %></p>
+      <p class="card-text"><%= truncate(post.body, length: 150) %></p>
+      <%= link_to 'Read', post %>
+    </div>
+  </div>
+</div> 
+<% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+     

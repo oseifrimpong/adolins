@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adolins</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../assets/font-awesome.css" media="screen">
+    <link rel="stylesheet" href="../assets/flexslider.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="../assets/responsive.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="../assets/blog-post.css" type="text/css" media="screen"/>
+    <link rel="icon" type="image/ico" href="/adolins_.ico" sizes="96x96">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+   
+<!-- <link rel="stylesheet" href="../assets/lightbox.scss" type="text/css" media="screen" /> -->
+  </head>
+
+  <body>
+
+     <%= render 'layouts/navbar' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> 
+    <div class="container">
+       <%= yield %>
+    </div>
+<!--end-articles-->
+  <%= render 'layouts/footer'  %>
+
+  </body>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!-- <script type="text/javascript" src="../assets/lightbox.js"></script> -->
+<script type="text/javascript" src="../assets/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/script.js"></script>
+<!-- <script>tinymce.init({ selector:'textarea', menu: {tools: {title: 'Tools', items: 'spellchecker code',
+insert: {title: 'Insert', items: 'link media | template hr'}}} });</script> -->
+<script src="../assets/modernizr.js"></script>
+<script type="text/javascript" src="../assets/jquery.nouislider.min.js"></script>
+</html>

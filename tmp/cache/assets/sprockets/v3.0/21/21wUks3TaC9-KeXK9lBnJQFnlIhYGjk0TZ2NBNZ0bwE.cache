@@ -1,0 +1,11 @@
+I"ü(function() {
+  $(function() {
+    return $(document).on('turbolinks:load', function() {
+      return $('comment-reply').click(function() {
+        return $(this).closest('.comment').find('reply-form').toggle();
+      });
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,43 @@
+ <p id="notice"><%= notice %></p>
+
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <!-- Blog Post -->
+                <!-- Title -->
+                <h1 class="title"><%= @post.title %></h1>
+
+                <!-- Date/Time -->
+                <p class="date">Published Date: <%= @post.created_at %></p>
+
+                <!-- Preview Image -->
+                
+                <div class="img-responsive">
+
+                <div class="img-holder">
+                    <%= cl_image_tag @post.image, timestamp: false %>
+
+                </div>
+               
+                </div>
+
+                <!-- Post Content -->
+                <p class="lead">
+                	 <%= @post.body %>
+                	 </p>
+
+                <%= render 'comments/comment' %>
+                             </div>
+
+                             <div class="col-md-8 col-lg-offset-2 back">
+    <%= link_to "Back to Post ", posts_path%>
+    </div>
+      </div>
+
+      
+
+        <!-- /.row -->
+
+
+

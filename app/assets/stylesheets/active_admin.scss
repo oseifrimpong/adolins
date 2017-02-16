@@ -1,0 +1,17 @@
+
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+
+
+$skinLogo: none;
+@import "active_skin";
+
+// .cke_chrome {
+//   width: 79.5% !important;
+//   overflow: hidden;
+// }
+
+//   .status_tag { background: #6090DB; }
