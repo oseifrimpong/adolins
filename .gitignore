@@ -18,4 +18,4 @@
 
 # Ignore application configuration
 /config/local_env.yml
-sendgrid.env
+/sendgrid.env
