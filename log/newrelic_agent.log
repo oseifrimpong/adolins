@@ -6398,3 +6398,24 @@
 [2017-02-16 15:23:00 +0800 Obeds-MacBook-Pro.local (24409)] INFO : Will re-attempt in 60 seconds
 [2017-02-16 15:24:17 +0800 Obeds-MacBook-Pro.local (24409)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1517640/applications/40844091
 [2017-02-16 22:16:10 +0800 Obeds-MacBook-Pro.local (24409)] INFO : Starting Agent shutdown
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Starting the New Relic agent in "development" environment.
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Reading configuration from config/newrelic.yml (/Users/oseifrimpong/Dropbox/Development/Sites/Adolins)
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : New Relic Agent Developer Mode enabled.
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Environment: development
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : No known dispatcher detected.
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Application: My Application (Development)
+[2017-02-16 23:14:33 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing ActiveJob instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing http.rb instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Net instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Rails 5 Controller instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Installing Rails 5 view instrumentation
+[2017-02-16 23:14:34 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Finished instrumentation
+[2017-02-16 23:14:36 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-02-16 23:14:40 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1517640/applications/40844091
+[2017-02-16 23:14:58 +0800 Obeds-MacBook-Pro.local (50601)] INFO : Starting Agent shutdown
