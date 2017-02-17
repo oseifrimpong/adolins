@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: a7f75368539cd2353aab4c4f84540e0f922c683f
+  revision: 8ddc07eefb9c4c39f96e1ad990fe7789555fd4ff
   specs:
     activeadmin (1.0.0.pre4)
       arbre (~> 1.0, >= 1.0.2)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: git://github.com/activeadmin/inherited_resources.git
-  revision: c8ad6a861288b91abdf8745c005016cb5ff1d4ad
+  revision: 615b0d5c37a4bfc86ad18ec22b90d161fd996130
   specs:
     inherited_resources (1.7.0)
       actionpack (>= 3.2, < 5.1)
@@ -73,14 +73,14 @@ GEM
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (7.1.4)
-    autoprefixer-rails (6.7.2)
+    autoprefixer-rails (6.7.3)
       execjs
     aws_cf_signer (0.1.3)
     bcrypt (3.1.11)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    bourbon (4.3.1)
+    bourbon (4.3.2)
       sass (~> 3.4)
       thor (~> 0.19)
     builder (3.2.3)
@@ -171,7 +171,7 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     netrc (0.11.0)
-    newrelic_rpm (3.18.0.329)
+    newrelic_rpm (3.18.1.330)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
