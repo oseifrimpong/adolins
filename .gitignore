@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+Gemfile.lock
 
 # Ignore Byebug command history file.
 .byebug_history
@@ -19,3 +20,4 @@
 # Ignore application configuration
 /config/local_env.yml
 sendgrid.env
+
