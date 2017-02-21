@@ -39,8 +39,11 @@ body {
 
 .lead {
     //padding-top: 2px;
-    padding-bottom: 5px;
-    text-align: justify;
+    padding-bottom: 5px !important;
+    text-align: justify !important;
+    //font-family:  !important;
+    font-weight: 100;
+
 }
 
 .img-responsive {

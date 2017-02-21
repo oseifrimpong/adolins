@@ -18,14 +18,14 @@
 
                 <div class="img-holder">
                     <%= cl_image_tag @post.image, timestamp: false %>
-
                 </div>
-
-
                 <!-- Post Content -->
-                <p class="lead">
-                	 <%= @post.body %>
-                	 </p>
+                <div class="lead">
+                    
+                	 <%= sanitize @post.body %>
+                    
+                </div>
+                
 
                 <%= render 'comments/comment' %>
                              </div>
