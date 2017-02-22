@@ -7702,3 +7702,105 @@
 [2017-02-21 16:10:38 +0800 Obeds-MacBook-Pro.local (72309)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.020546 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
 [2017-02-21 16:10:38 +0800 Obeds-MacBook-Pro.local (72309)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
 [2017-02-21 16:10:38 +0800 Obeds-MacBook-Pro.local (72309)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.021278 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-02-21 23:54:43 +0800 Obeds-MacBook-Pro.local (72309)] INFO : Starting Agent shutdown
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Starting the New Relic agent in "development" environment.
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Reading configuration from config/newrelic.yml (/Users/oseifrimpong/Dropbox/Development/Sites/Adolins)
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : New Relic Agent Developer Mode enabled.
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Environment: development
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : No known dispatcher detected.
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Application: My Application (Development)
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing ActiveJob instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing http.rb instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Net instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Rails 5 Controller instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Installing Rails 5 view instrumentation
+[2017-02-21 23:56:35 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Finished instrumentation
+[2017-02-21 23:56:37 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-02-21 23:56:47 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1517640/applications/40844091
+[2017-02-21 23:58:07 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-21 23:58:07 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-21 23:59:08 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-21 23:59:08 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-21 23:59:50 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-21 23:59:50 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:00:52 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:00:52 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:01:59 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:01:59 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:03:03 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:03:03 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:03:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:03:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:04:49 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:04:49 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:05:57 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:05:57 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:06:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:06:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:08:05 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:08:05 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:08:49 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:08:49 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:09:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:09:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:10:50 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:10:50 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:11:55 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:11:55 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:12:56 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:12:56 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:14:04 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:14:04 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:15:03 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:15:03 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:15:53 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:15:53 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:16:57 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:16:57 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:17:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:17:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:18:58 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:18:58 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:20:12 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:20:12 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:20:58 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-02-22 00:20:58 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:21:51 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Starting Agent shutdown
+[2017-02-22 00:21:53 +0800 Obeds-MacBook-Pro.local (6616)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-02-22 00:21:53 +0800 Obeds-MacBook-Pro.local (6616)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Starting the New Relic agent in "development" environment.
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Reading configuration from config/newrelic.yml (/Users/oseifrimpong/Dropbox/Development/Sites/Adolins)
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : New Relic Agent Developer Mode enabled.
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Environment: development
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : No known dispatcher detected.
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Application: My Application (Development)
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing ActiveJob instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing ActiveRecord 5 instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing http.rb instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Net instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Rails 5 Action Cable instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Rails 5 Controller instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Installing Rails 5 view instrumentation
+[2017-02-22 00:26:01 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Finished instrumentation
+[2017-02-22 00:26:03 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-02-22 00:26:15 +0800 Obeds-MacBook-Pro.local (8472)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1517640/applications/40844091
+[2017-02-22 17:34:26 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-02-22 17:34:27 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.013767 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-02-22 17:35:23 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-02-22 17:35:23 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.010034 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-02-22 17:35:23 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-02-22 17:35:23 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.006317 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-02-22 20:15:42 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-02-22 20:15:42 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 3.003738 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-02-22 20:15:42 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-02-22 20:15:42 +0800 Obeds-MacBook-Pro.local (8472)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-182.newrelic.com:443 after 0.043155 seconds: Failed to open TCP connection to collector-182.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)

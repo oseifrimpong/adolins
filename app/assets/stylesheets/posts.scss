@@ -30,6 +30,10 @@
         }
         .card-text { 
         	margin-bottom: 10px;
+            text-overflow: ellipsis !important;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+           height: 80px;
         }
         a{
         	color: primary !important;

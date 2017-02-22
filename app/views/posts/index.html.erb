@@ -8,7 +8,9 @@
     <div class="card-block">
       <h4 class="card-title"><%= link_to truncate(post.title, length: 30), post, class: 'title-link', style: ':hover{background-color: none;}' %></h4>
       <p class="published-date"><%= post.created_at %></p>
-      <p class="card-text"><%= truncate( sanitize post.body, length: 200) %></p>
+      <div class="card-text">
+      	<p><%= sanitize post.body  %></p>
+      </div>
       <%= link_to 'Read', post %>
     </div>
   </div>
