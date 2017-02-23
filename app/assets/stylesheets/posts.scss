@@ -34,7 +34,7 @@
             overflow: hidden;
             -o-text-overflow: ellipsis;
             height: 80px;
-            text-align:justify;
+            text-align:justify !important;
         }
         a {
             color: primary !important;
