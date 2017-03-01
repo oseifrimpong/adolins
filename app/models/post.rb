@@ -8,7 +8,7 @@ class Post < ApplicationRecord
   #do_not_validate_attachment_file_type :image
 
   	#for commment threading
-  	acts_as_commentable
+  	belongs_to :user
 
 
 	validates :title, presence: true  
