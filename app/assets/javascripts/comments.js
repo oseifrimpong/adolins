@@ -2,7 +2,7 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).addEventListener('turbolinks:load', function() {
+$(document).on('turbolinks:load', function() {
   $('.comment-reply').click( function(){
      $(this).closest('.comment').find('.reply-form').toggle();
   });
