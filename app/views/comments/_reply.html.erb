@@ -1,6 +1,6 @@
 <% comments.each do |comment| %>  
   <div class="comments-show">
-    <div class="comment">
+    <div class="comment-view">
       <p class="tag"><%= comment.user.username %> <em>(<%= time_tag comment.created_at, limit: 5.years.ago %>)</em></p>
       <p><%= comment.body %></p>
       <div class="comment-nav"><span class="comment-reply"></span></div>
