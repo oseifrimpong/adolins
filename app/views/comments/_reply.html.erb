@@ -3,7 +3,7 @@
     <div class="comment">
       <p class="tag"><%= comment.user.username %> <em>(<%= time_tag comment.created_at, limit: 5.years.ago %>)</em></p>
       <p><%= comment.body %></p>
-      <div class="comment-nav"><span class="comment-reply"></span></div>
+      <div class="comment-nav"><a href="#" class="comment-reply">reply</a></div>
       <div class="reply-form">
         <%= form_for @new_comment do |f| %>
           <%= f.hidden_field :commentable_id, value: @new_comment.commentable_id %>
