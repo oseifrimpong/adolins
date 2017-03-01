@@ -70,7 +70,10 @@
 
 .reply-form {
     display: none;
-    height: 20px;
+    .field{
+        height: 10px !important;
+    }
+    
 }
 
 .comments-show {
