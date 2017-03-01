@@ -16,7 +16,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @comments = Comment.where(post_id: @post).order("created_at DESC")
+    @post          = Post.find(params[:id])
+    @new_comment    = Comment.build_from(@post, current_user.id, "")
     if request.path != post_path(@post)
       redirect_to @post, status: :moved_permanently
     end

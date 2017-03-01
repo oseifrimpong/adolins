@@ -27,7 +27,7 @@
                 </div>
                 
 
-                <%= render 'comments/comment' %>
+                <%= render partial: "comments/template", locals: {commentable: @post, new_comment: @comment} %> 
                              </div>
 
                              <div class="col-md-8 col-lg-offset-2 back">

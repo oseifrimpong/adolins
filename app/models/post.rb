@@ -1,10 +1,14 @@
 class Post < ApplicationRecord
+	acts_as_commentable
 	has_attached_file :image, :storage => :cloudinary, :path => ':id/:style/:filename', styles: { large: "1000x1000>", thumb: "100x100>" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   #validates_attachment_file_name :image, matches: [/png\z/, /jpeg\z/]
 
   #do_not_validate_attachment_file_type :image
+
+  	#for commment threading
+  	acts_as_commentable
 
 
 	validates :title, presence: true  

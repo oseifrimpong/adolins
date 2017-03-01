@@ -1,51 +1,50 @@
 class CommentsController < ApplicationController
 	before_action :authenticate_user!
-	before_action :find_post
+	#before_action :find_post
 	before_action :find_comment, only: [:destroy, :edit, :update]
 	#before_action :comment_owner, only: [:destroy, :edit, :update]
-	def create
-		@comment = @post.comments.create(params[:comment].permit(:content))
-		#@comment.user_id = current_user.id
-		@comment.save
+	 #before_action :authenticate_user!
 
-		if @comment.save
-				redirect_to post_path(@post)
-			else
+  def create
+    commentable = commentable_type.constantize.find(commentable_id)
+    @comment = Comment.build_from(commentable, current_user.id, body)
 
-				render 'new'
-			end	
-	end
+    respond_to do |format|
+      if @comment.save
+        make_child_comment
+        format.html  { redirect_to(:back, :notice => 'Comment was successfully added.') }
+      else
+        format.html  { render :action => "new" }
+      end
+    end
+  end
 
-	def destroy
-		@comment.destroy
-		redirect_to post_path(@post)
-	end
+  private
 
-	def edit
-		#authorize! :update, @comment
-	end
+  def comment_params
+    params.require(:comment).permit(:body, :commentable_id, :commentable_type, :comment_id)
+  end
 
-	def update
-		if @comment.update(params[:comment].permit(:content))
-			redirect_to post_path(@post)
-			else
-				render 'edit'
-		end
-	end
+  def commentable_type
+    comment_params[:commentable_type]
+  end
 
-	private
+  def commentable_id
+    comment_params[:commentable_id]
+  end
 
-	def find_post
-		@post = Post.find(params[:post_id])
-	end
+  def comment_id
+    comment_params[:comment_id]
+  end
 
-	def find_comment
-		@comment = @post.comments.find(params[:id])
-	end
+  def body
+    comment_params[:body]
+  end
 
-	# def comment_owner
-	# 	unless current_user.id == @comment.user_id
-	# 		redirect_to @post
-	# 	end
-	# end
+  def make_child_comment
+    return "" if comment_id.blank?
+
+    parent_comment = Comment.find comment_id
+    @comment.move_to_child_of(parent_comment)
+  end
 end

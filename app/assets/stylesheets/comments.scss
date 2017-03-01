@@ -1,43 +1,77 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-.countcom{
-	font-size: 10px;
-	margin-bottom: 10px;
+.countcom {
+    font-size: 10px;
+    margin-bottom: 10px;
 }
 
-.editbtn{
-	float: right !important;
-	font-size: 12px;
+.editbtn {
+    float: right !important;
+    font-size: 12px;
 }
 
-.btn-primary{
-	padding-bottom: 10px !important;
+.btn-primary {
+    padding-bottom: 10px !important;
 }
 
-.comment-view{
-	padding: 10px 5px 20px;
-	margin: 5px 0;
-	color: rgba(0,0,0,.8);
-	background: rgba(255,255,255,.7);
-	border-radius: 5px;
-	border-left: solid 3px white;
-	border-right: solid 3px white;
-
-	p{
-		margin-top: 10px;
-		font-weight: lighter;
-		margin-left: 20px;
-	}
-
-	h4{
-		font-size: 12px;
-		font-weight: bolder;
-	}
+.comment-view {
+    padding: 4px 2px 8px;
+    margin: 2.5px 0;
+    color: rgba(0, 0, 0, .8);
+    background: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    p {
+        margin-top: 10px;
+        font-weight: lighter;
+        margin-left: 20px;
+    }
+    h4 {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .tag {
+        font-size: 10px !important;
+        text-decoration:bold !important;
+    }
 }
 
-.comment-form{
-	margin: 30px 0;
+.comment-form {
+    margin: 30px 0;
+}
+
+.comments-header {
+    border-bottom: 1px dotted gray;
+    margin-bottom: 10px;
+}
+
+.comments-container P {
+    margin-bottom: 0px;
+}
+
+.comments-container .comment-nav {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.comments-container .comment-nav span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #888;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comments-container .comment-nav span:hover {
+    text-decoration: none;
+}
+
+.reply-form {
+    display: none;
+}
+
+.comments-show {
+    margin-left: 25px;
 }
